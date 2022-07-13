@@ -1,0 +1,28 @@
+    //node 1
+
+
+
+    //node 2
+
+
+        # # Sending 5 messages to Node 2
+        # for i in range(5):
+        #
+        #     node1_msg_bytes = create_msg("node1","post",1,"voted","node2", i)
+        #
+        #     UDP_Socket.sendto(node1_msg_bytes, (target, 5555))
+        #     time.sleep(1)
+
+
+        # Dummy Function
+        # def function_to_demonstrate_multithreading():
+        #     for i in range(5):
+        #         print(f"Hi Executing Dummy function : {i}")
+        #         time.sleep(2)
+
+        #Starting thread 2
+        # threading.Thread(target=function_to_demonstrate_multithreading).start()
+
+        # print("Started both functions, Sleeping on the main thread for 10 seconds now")
+
+        # time.sleep(10)
