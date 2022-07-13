@@ -20,11 +20,11 @@ rules to grant a positive vote.
 
 Validation:
 
- 	For testing purposes, we will require a listener thread at the Controller end to receive messages from the leader.
-  We will use our controller(hidden test-cases) to evaluate. As long as we follow the naming conventions in the JSON message
-  and you are handling all the specified controller requests on the server-node’s side there will not be any issues in testing.
-  Additionally, we will need to check if a particular entry has been replicated on the majority of the followers and send 
-  that in the APPEND RPC to the followers which will apply that to their own logs for a final commit.
+  For testing purposes, we will require a listener thread at the Controller end to receive messages from the leader.
+We will use our controller(hidden test-cases) to evaluate. As long as we follow the naming conventions in the JSON message
+and you are handling all the specified controller requests on the server-node’s side there will not be any issues in testing.
+Additionally, we will need to check if a particular entry has been replicated on the majority of the followers and send 
+that in the APPEND RPC to the followers which will apply that to their own logs for a final commit.
  	 
   Also, we will have to validate that the STORE req from the controller is not a trigger for the AppendEntryRPC.
 The AppendEntry RPC is triggered at regular intervals as a heartbeat (which is why it is also functioning as a heartbeat).
