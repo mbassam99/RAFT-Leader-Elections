@@ -1,10 +1,10 @@
 Introduction:
 
-	The motivation of this phase is to create an election to the leader in RAFT in an environment where there are at least 
-  5 nodes. In order to successfully have a leader election, we will need to implement Heartbeats, Timeouts,
-  remote-procedure-calls (RPCs) to each node that we have. It is also important to create multiple asynchronous threads
-  to build this phase and have it fully functioning. Different from other phases, in this phase we will see the comparisons
-  play an important role in deciding who can and who cannot become the leader.
+The motivation of this phase is to create an election to the leader in RAFT in an environment where there are at least 
+5 nodes. In order to successfully have a leader election, we will need to implement Heartbeats, Timeouts,
+remote-procedure-calls (RPCs) to each node that we have. It is also important to create multiple asynchronous threads
+to build this phase and have it fully functioning. Different from other phases, in this phase we will see the comparisons  
+play an important role in deciding who can and who cannot become the leader.
 
 Implementation:
 
